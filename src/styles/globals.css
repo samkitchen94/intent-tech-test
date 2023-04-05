@@ -32,6 +32,7 @@ a {
     font-size: 13px;
     line-height: 26px;
     letter-spacing: 0.14em;
+    text-align: center;
     @apply text-category-yellow;
     text-transform: uppercase;
   }

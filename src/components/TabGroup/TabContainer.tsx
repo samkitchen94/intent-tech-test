@@ -8,10 +8,10 @@ const TabContainer = () => {
   const activeItems: TabItemProps[] = tabItems[active];
 
   return (
-    <div className="max-w-[1140px] w-full px-8 mx-auto">
+    <>
     <TabTitles setActive={setActive} active={active} />
     <TabGroup items={activeItems} />
-    </div>
+    </>
   )
 }
 
