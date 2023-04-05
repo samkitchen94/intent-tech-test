@@ -13,7 +13,18 @@ module.exports = {
       xl: '1280px',
       xxl: '1440px',
     },
-    extend: {},
+    extend: {
+      height: {
+        "150": "150px",
+      },
+      padding: {
+        "px-40p": "40px",
+      },
+      fontFamily: {
+        avenir: ['var(--font-avenir)'],
+        bebas: ['var(--font-bebas)'],
+      },
+    },
     colors: {
       "black-primary": "#1C1C1C",
       "black-secondary": "#292828",

@@ -1,9 +1,10 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind apply;
 
 :root {
-  --category-yellow: #EBA639;
+  --grey: #EBEBEB;
 }
 
 * {
@@ -23,3 +24,95 @@ a {
   text-decoration: none;
 }
 
+@layer base {
+  h1 {
+    font-family: var(--font-avenir);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 26px;
+    letter-spacing: 0.14em;
+    @apply text-category-yellow;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: var(--font-bebas);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    @apply text-black-primary;
+  }
+  h3 {
+    font-family: var(--font-avenir);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    @apply text-black-primary;
+  }
+  h4 {
+    font-family: var(--font-avenir);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.14em;
+    @apply text-black-primary;
+
+  }
+  h5 {
+    font-family: var(--font-avenir);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 26px;
+    @apply text-black-primary;
+  }
+  p {
+    font-family: var(--font-avenir);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    @apply text-black-primary;
+  }
+}
+
+.item-grid {
+  border-right: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+}
+
+@media only screen and (min-width: 1024px) {
+  .item-grid:nth-child(4n) {
+    border-right: none;
+  }
+  
+  .item-grid:nth-last-child(-n+4) {
+    border-bottom: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .item-grid:nth-child(even) {
+    border-right: none;
+  }
+
+  .item-grid:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .item-grid {
+    border-right: none;
+  }
+  .item-grid:last-child {
+    border-bottom: none;
+  }
+}
