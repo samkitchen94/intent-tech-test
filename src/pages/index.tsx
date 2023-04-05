@@ -1,8 +1,8 @@
-import TabGroup from '@components/TabGroup/TabGroup';
+import TabContainer from "@components/TabGroup/TabContainer";
 
 const Home = () => {
   return (
-    <TabGroup />
+    <TabContainer />
   );
 }
 

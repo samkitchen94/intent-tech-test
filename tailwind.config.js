@@ -20,6 +20,9 @@ module.exports = {
       padding: {
         "px-40p": "40px",
       },
+      maxWidth: {
+        "m-w-1140": "1140px"
+      },
       fontFamily: {
         avenir: ['var(--font-avenir)'],
         bebas: ['var(--font-bebas)'],
