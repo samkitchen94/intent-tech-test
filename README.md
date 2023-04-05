@@ -30,5 +30,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## If i'd have had more time..
 - I'd have built the first component in the file - hopefully this gives you a good enough understanding of my abilities!
 - Potentially some of the components can be memoised, this doesn't really matter in a tiny project like this but in production performance is key.
+- Font sizes/ line heights could have been more responsive - at the moment they are just in px. It would be better if they were either using ems or even better, using the css clamp() function as well so that they scale with the page size.
 
 Look forward to hearing your thoughts!
