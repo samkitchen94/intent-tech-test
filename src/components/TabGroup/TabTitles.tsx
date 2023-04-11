@@ -7,20 +7,17 @@ type TabTitlesProps = {
   active: string;
 }
 
-const TabTitles = ({ setActive, active }: TabTitlesProps) => {
-
-  return (
-    <div className="flex w-full pb-16">
-      {titles.map(title => (
-        <TabTitle 
-          key={title} 
-          title={title} 
-          setActive={setActive} 
-          isActive={active === title} 
-        />
-      ))}
-    </div>
-  )
-}
+const TabTitles = ({ setActive, active }: TabTitlesProps) => (
+  <div className="flex w-full pb-16">
+    {titles.map(title => (
+      <TabTitle
+        key={title}
+        title={title}
+        setActive={setActive}
+        isActive={active === title}
+      />
+    ))}
+  </div>
+);
 
 export default TabTitles;

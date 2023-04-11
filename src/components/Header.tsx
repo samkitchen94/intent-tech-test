@@ -1,6 +1,6 @@
 import { memo } from "react";
 
-const Header = memo(function Hello() {
+const Header = memo(function Header() {
   return (
     <div className="w-full lg:w-[50%] pb-[50px] mx-auto">
       <h1 className="pb-[10px]">AREAS OF FOCUS</h1>
